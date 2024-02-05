@@ -55,18 +55,17 @@ lower bound for f(n).
 
 # Theta Notation
 * f(n) ∈ Θ(g(n)), where n is the problem size and
-Θ(g(n)) = {h(n): ∃ positive constants c1, c2, and n0 such that 0 ≤ c1g(n) ≤ h(n) ≤ c2g(n), ∀ n ≥ n0}. Hence, we can say thatΘ(g(n)) comprises a set of all the functionsh(n) that are betweenc1g(n) and c2g(n) for all values of n ≥ n0. If f(n) is between c1g(n) and c2g(n), ∀ n ≥ n0, then f(n) ∈ Θ(g(n)) and g(n) is an asymptotically tight bound for f(n) and f(n) is amongst h(n) in the set.
+Θ(g(n)) = {h(n): ∃ positive constants c1, c2, and n0 such that 0 ≤ c1g(n) ≤ h(n) ≤ c2g(n), ∀ n ≥ n0}. Hence, we can say that Θ(g(n)) comprises a set of all the functionsh(n) that are betweenc1g(n) and c2g(n) for all values of n ≥ n0. If f(n) is between c1g(n) and c2g(n), ∀ n ≥ n0, then f(n) ∈ Θ(g(n)) and g(n) is an asymptotically tight bound for f(n) and f(n) is amongst h(n) in the set.
 * The best case of an algorithm is not used
 * So for the worst case set of inputs it provides asymptotes to what the complexity can be based on the size of the input.
+* Basically shows that the complexity of an algorithm is bound between two values.
 * Show that n2/2 – 2n = Θ(n2).
-Solution By the definition, we can write
-c1g(n) ≤ h(n) ≤ c2g(n)
-c1n2 ≤ n2/2 – 2n ≤ c2n2
-Dividing by n2, we get
+* c1n2(n) <= h(n) <- c2g(n)
+* c1n2 <= n2/2 – 2n <= c2n2
+* Dividing by n2, we get
 c1n2/n2 ≤ n2/2n2 – 2n/n2 ≤ c2n2/n2
-c1 ≤ 1/2 – 2/n ≤ c2
-This means c2 = 1/2 because lim
-nÆ• 1/2 – 2/n = 1/2 (Big O notation)
+* c1 ≤ 1/2 – 2/n ≤ c2
+* This means c2 = 1/2 because lim as n->infinity of 1/2 – 2/n = 1/2 (Big O notation)
 
 #Little o notation
 * it provides a non asymptotic tight bound for the function f(n) 
