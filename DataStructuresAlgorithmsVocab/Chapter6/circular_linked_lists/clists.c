@@ -85,3 +85,28 @@ void clist_insert_in_order(Node **list, Node **newnode)
     (*newnode)->next = cur;
     prev->next = *newnode;
 }
+
+// input a starting node and then the value you want to find
+// it will go through the circular list and check each node
+// it also returns the index, relative to the starting node, of the piece of data
+//this can be changed to return different value simply signifying that it is in the circular linked list
+
+int find_in_clist(Node *start, int value)
+{
+
+    Node *node = start;
+    int index = 0;
+    while (node != start)
+    {
+        if (node->val == value)
+        {
+            printf("%d is in index %d", value, index);
+            return index;
+        }
+        else
+        {
+            index++;
+            node = node->next;
+        }
+    }
+}
