@@ -11,3 +11,5 @@ char *print_clist(Node *);
 // Node* insert_at_index(Node*, int);
 void clist_insert_in_order(Node **, Node **);
 // Node* remove_from_list(Node**, int);
+// void find_in_clist(Node *, int)
+int find_in_clist(Node *, int);
